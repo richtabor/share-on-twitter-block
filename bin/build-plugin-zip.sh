@@ -75,12 +75,6 @@ npm run build:assets
 
 mkdir -p dist
 
-# Temporarily modify `gutenberg.php` with production constants defined. Use a
-# temp file because `bin/generate-gutenberg-php.php` reads from `gutenberg.php`
-# so we need to avoid writing to that file at the same time.
-# php bin/generate-gutenberg-php.php > gutenberg.tmp.php
-# mv gutenberg.tmp.php gutenberg.php
-
 build_files=$(ls build/*.{js,css,asset.php})
 
 # Generate the plugin zip file.
