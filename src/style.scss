@@ -1,0 +1,74 @@
+.wp-block-tabor-share-on-twitter {
+
+	//Set block defaults.
+	--wp--default--share-on-twitter--border--color: #ebedf0;
+	--wp--default--share-on-twitter--border--radius: 4px;
+	--wp--default--share-on-twitter--border--width: 1px;
+	--wp--default--share-on-twitter--icon--size: 28px;
+	--wp--default--share-on-twitter--icon--spacing-left: 0.45rem;
+	--wp--default--share-on-twitter--typography--font-family: var(--wp--custom--heading--typography--font-family);
+
+	// Set variables.
+	--borderColor: var(--wp--custom--share-on-twitter--border--color, var(--wp--default--share-on-twitter--border--color));
+	--borderRadius: var(--wp--custom--share-on-twitter--border--radius, var(--wp--default--share-on-twitter--border--radius));
+	--borderWidth: var(--wp--custom--share-on-twitter--border--width, var(--wp--default--share-on-twitter--border--width));
+	--fontFamily: var(--wp--custom--share-on-twitter--typography--font-family, var(--wp--default--share-on-twitter--typography--font-family));
+	--iconSize: var(--wp--custom--share-on-twitter--icon--size, var(--wp--default--share-on-twitter--icon--size));
+	--iconSpacing: var(--wp--custom--share-on-twitter--icon--spacing-left, var(--wp--default--share-on-twitter--icon--spacing-left));
+}
+
+.wp-block-tabor-share-on-twitter {
+	border-radius: var(--borderRadius);
+	border: var(--borderWidth) solid var(--borderColor);
+	font-family: var(--fontFamily);
+
+	// Only apply padding if custom padding is not applied in the editor.
+	&:not([style*="padding"]) {
+		padding: var(--wp--custom--margin--vertical, 30px);
+	}
+
+	&.has-text-align-center .wp-block-tabor-share-on-twitter__cta {
+		justify-content: center;
+	}
+
+	&.has-text-align-right .wp-block-tabor-share-on-twitter__cta {
+		justify-content: flex-end;
+	}
+
+	&__content,
+	&__cta-text {
+		// Use importants to ensure link styles from themes don't negatively affect.
+		box-shadow: none !important;
+		color: unset;
+		display: block;
+		text-decoration-line: none !important;
+		text-decoration: none !important;
+	}
+}
+
+.wp-block-tabor-share-on-twitter__cta {
+	align-items: center;
+	display: flex;
+	margin-top: 1rem;
+
+	&-text {
+		font-size: 1rem;
+		font-weight: normal;
+		letter-spacing: normal;
+		text-transform: none;
+	}
+
+	&-icon {
+		align-items: center;
+		display: flex;
+		height: var(--iconSize);
+		line-height: 1;
+		margin-left: var(--iconSpacing);
+		width: var(--iconSize);
+
+		svg {
+			position: relative;
+			top: 1px;
+		}
+	}
+}

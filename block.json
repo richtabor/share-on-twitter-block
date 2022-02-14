@@ -1,0 +1,73 @@
+{
+	"apiVersion": 2,
+	"name": "tabor/share-on-twitter",
+	"title": "Share on Twitter",
+	"category": "text",
+	"description": "Add a click to tweet element for your readers to share this content.",
+        "keywords": [ "tweet", "click", "social", "tabor"],
+	"textdomain": "todo-block",
+	"attributes": {
+                "content": {
+			"type": "string",
+			"selector": "wp-block-tabor-share-on-twitter__content"
+		},
+		"cta": {
+			"type": "string",
+			"selector": "wp-block-tabor-share-on-twitter__cta",
+			"default": "Click to Tweet"
+		},
+		"permalink": {
+			"type": "string"
+		},
+		"icon": {
+			"type": "number",
+			"default": 1
+		},
+		"username": {
+			"type": "string"
+		},
+		"hashtags": {
+			"type": "array"
+		},
+		"textAlign": {
+			"type": "string"
+		},
+		"fontSize":{
+			"default": "large"
+		}
+	},
+        "supports": {
+		"html": false,
+		"color": true,
+                "typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalTextTransform": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

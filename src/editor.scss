@@ -1,0 +1,79 @@
+// Ensure RichText components look right within the editor.
+.wp-block-tabor-share-on-twitter__cta-text,
+.wp-block-tabor-share-on-twitter__content {
+	cursor: text !important;
+	color: unset !important;
+	outline: none !important;
+}
+
+// Style the check validation for username.
+.tabor-ctt-button-w-validation svg {
+	margin-right: 0 !important;
+}
+
+.tabor-ctt-button-w-validation__check {
+	min-width: 14px !important;
+	position: absolute !important;
+	right: -3px;
+	top: 9px;
+}
+
+// Style the IconDropdown control.
+.tabor-ctt-icon-toolbar .components-toolbar-group {
+
+	> :first-of-type {
+		border-right: 1px solid #1e1e1e;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	svg {
+		height: 24px;
+		width: 24px;
+	}
+}
+
+.tabor-ctt-icon-dropdown {
+	.components-popover__content {
+		min-width: 250px;
+
+		> div {
+			padding: 0;
+		}
+	}
+
+	.components-accessible-toolbar {
+		border: 0;
+	}
+}
+
+// Style the hashtagDropdown and usernameDropdown controls.
+.tabor-ctt-attributes-dropdown {
+
+	.components-popover__content {
+		min-width: 226px;
+	}
+
+	.components-base-control {
+		margin-bottom: 0;
+	}
+
+	.components-form-token-field__help {
+		display: none;
+	}
+
+	.components-base-control__help {
+		margin-bottom: 0;
+	}
+
+	.components-form-token-field__custom-help {
+		color: rgb(117, 117, 117);
+		font-size: 12px;
+		font-style: normal;
+		margin-bottom: 0;
+	}
+
+	.components-form-token-field__input-container {
+		margin-bottom: 0;
+	}
+}
