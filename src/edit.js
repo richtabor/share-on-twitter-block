@@ -13,8 +13,7 @@ import {
 	RichText,
 	AlignmentControl,
 } from '@wordpress/block-editor';
-import { compose } from '@wordpress/compose';
-import {useDispatch, withSelect } from '@wordpress/data';
+import { useDispatch, useSelect } from '@wordpress/data';
 import { useEffect } from '@wordpress/element';
 
 /**
@@ -46,7 +45,6 @@ function ShareOnTwitterBlock( {
 	setAttributes,
 	onReplace,
 	attributes,
-	postLink,
 } ) {
 	const {
 		content,
@@ -58,7 +56,13 @@ function ShareOnTwitterBlock( {
 		permalink,
 	} = attributes;
 
-	const { __unstableMarkNextChangeAsNotPersistent } = useDispatch( 'core/block-editor' );
+	const postLink = useSelect( ( select ) => {
+		return select( 'core/editor' ).getPermalink();
+	}, [] );
+
+	const { __unstableMarkNextChangeAsNotPersistent } = useDispatch(
+		'core/block-editor'
+	);
 
 	useEffect( () => {
 		if ( permalink === undefined ) {
@@ -179,12 +183,4 @@ function ShareOnTwitterBlock( {
 	);
 }
 
-const applyWithSelect = withSelect( ( select ) => {
-	const { getPermalink } = select( 'core/editor' );
-
-	return {
-		postLink: getPermalink(),
-	};
-} );
-
-export default compose( [ applyWithSelect ] )( ShareOnTwitterBlock );
+export default ShareOnTwitterBlock;
