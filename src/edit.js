@@ -14,7 +14,7 @@ import {
 	AlignmentControl,
 } from '@wordpress/block-editor';
 import { compose } from '@wordpress/compose';
-import { withSelect } from '@wordpress/data';
+import {useDispatch, withSelect } from '@wordpress/data';
 import { useEffect } from '@wordpress/element';
 
 /**
@@ -58,8 +58,12 @@ function ShareOnTwitterBlock( {
 		permalink,
 	} = attributes;
 
+	const { __unstableMarkNextChangeAsNotPersistent } = useDispatch( 'core/block-editor' );
+
 	useEffect( () => {
 		if ( permalink === undefined ) {
+			// This effect should not create an undo level.
+			__unstableMarkNextChangeAsNotPersistent();
 			setAttributes( { permalink: postLink } );
 		}
 	}, [ permalink ] );
