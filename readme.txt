@@ -1,5 +1,5 @@
 === Share on Twitter Block ===
-Contributors:      richtabor
+Contributors:      richtabor, mamaduka
 Tags:              social, block, click to tweet, tweet, twitter
 Tested up to:      5.9
 Stable tag:        0.2.3
@@ -28,6 +28,10 @@ Please reach out via the official [plugin support forum](https://wordpress.org/s
 As a WordPress entrepreneur, designer and developer all wrapped up in one, [@richard_tabor](http://twitter.com/richard_tabor) is recognized as one of the top leaders in this post-Gutenberg era of WordPress. His design chops have topped the 2018 Automattic Design Awards and led him to found CoBlocks – a top-notch set of page builder blocks and tools for Gutenberg, ThemeBeans – a premier WordPress theme shop and [Iceberg](https://useiceberg.com/?utm_source=wp-org&utm_medium=share-on-twitter-block&utm_campaign=readme-faq) – a markdown editor for Gutenberg.
 
 == Changelog ==
+
+= 0.2.4 =
+* Clean up default sidebar control state
+* Fix "Undo trap", which prevented undoing block insertion
 
 = 0.2.3 =
 * Add support for border color, size, width and radius controls
