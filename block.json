@@ -38,7 +38,13 @@
 	},
         "supports": {
 		"html": false,
-		"color": true,
+		"color": {
+			"colors": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
                 "typography": {
 			"fontSize": true,
 			"lineHeight": true,
@@ -51,8 +57,14 @@
 			}
 		},
 		"spacing": {
-			"padding": true,
-			"margin": true
+			"padding": [
+				"horizontal",
+				"vertical"
+			],
+			"margin": [
+				"horizontal",
+				"vertical"
+			]
 		},
 		"__experimentalBorder": {
 			"color": true,
@@ -60,10 +72,10 @@
 			"style": true,
 			"width": true,
 			"__experimentalDefaultControls": {
-				"color": true,
-				"radius": true,
-				"style": true,
-				"width": true
+				"color": false,
+				"radius": false,
+				"style": false,
+				"width": false
 			}
 		}
 	},
