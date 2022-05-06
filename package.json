@@ -1,6 +1,6 @@
 {
 	"name": "share-on-twitter-block",
-	"version": "0.2.4",
+	"version": "0.2.5",
 	"description": "A Gutenberg block that lets you easily create tweetable content for your readers.",
 	"author": {
 		"name": "richtabor",
