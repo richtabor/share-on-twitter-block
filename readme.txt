@@ -29,6 +29,9 @@ As a WordPress entrepreneur, designer and developer all wrapped up in one, [@ric
 
 == Changelog ==
 
+= 0.2.5 =
+* Update tested up to value to 6.0
+
 = 0.2.4 =
 * Clean up default sidebar control state
 * Fix "Undo trap", which prevented undoing block insertion
