@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Share on Twitter Block
  * Description:       A Gutenberg block that lets you easily create tweetable content for your readers.
- * Plugin URI:        https://wordpress.org/plugins/share-on-twitter-block/
+ * Plugin URI:        https://richtabor.com/blocks
  * Requires at least: 5.7
  * Requires PHP:      7.0
  * Version:           0.2.6
