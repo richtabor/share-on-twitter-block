@@ -34,7 +34,7 @@ As a WordPress entrepreneur, designer and developer all wrapped up in one, [@ric
 == Changelog ==
 
 = 0.2.6 =
-* Fix Plugin URI to point to valid page (Rich's blocks page)
+* Fix Plugin URI to point to https://richtabor.com/blocks
 * Update block to use apiVersion 3 for iframe editor compatibility
 * Add source code repository link to readme (required for minified JS)
 * Update tested up to WordPress 7.0
