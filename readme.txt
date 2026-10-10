@@ -1,8 +1,8 @@
 === Share on Twitter Block ===
 Contributors:      richtabor, mamaduka
 Tags:              social, block, click to tweet, tweet, twitter
-Tested up to:      6.0
-Stable tag:        0.2.5
+Tested up to:      6.7
+Stable tag:        0.2.6
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,6 +11,10 @@ A Gutenberg block that lets you easily create tweetable "click to tweet" content
 == Description ==
 
 A Gutenberg block that lets you easily create tweetable "click to tweet" content for your readers.
+
+**Source Code**
+
+This plugin contains compiled/minified JavaScript files. The human-readable source code is available on GitHub: [https://github.com/richtabor/share-on-twitter-block](https://github.com/richtabor/share-on-twitter-block)
 
 == Installation ==
 1. Upload the `share-on-twitter-block` folder to your `/wp-content/plugins/` directory or alternatively upload the share-on-twitter-block.zip file via the plugin page of WordPress by clicking 'Add New' and selecting the zip from your local computer.
@@ -28,6 +32,12 @@ Please reach out via the official [plugin support forum](https://wordpress.org/s
 As a WordPress entrepreneur, designer and developer all wrapped up in one, [@richard_tabor](http://twitter.com/richard_tabor) is recognized as one of the top leaders in this post-Gutenberg era of WordPress. His design chops have topped the 2018 Automattic Design Awards and led him to found CoBlocks – a top-notch set of page builder blocks and tools for Gutenberg, ThemeBeans – a premier WordPress theme shop and [Iceberg](https://useiceberg.com/?utm_source=wp-org&utm_medium=share-on-twitter-block&utm_campaign=readme-faq) – a markdown editor for Gutenberg.
 
 == Changelog ==
+
+= 0.2.6 =
+* Fix Plugin URI to point to valid WordPress.org plugin page
+* Update block to use apiVersion 3 for iframe editor compatibility
+* Add source code repository link to readme (required for minified JS)
+* Update tested up to WordPress 6.7
 
 = 0.2.5 =
 * Update tested up to value to 6.0

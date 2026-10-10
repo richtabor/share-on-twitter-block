@@ -1,6 +1,6 @@
 {
 	"name": "share-on-twitter-block",
-	"version": "0.2.5",
+	"version": "0.2.6",
 	"description": "A Gutenberg block that lets you easily create tweetable content for your readers.",
 	"author": {
 		"name": "richtabor",
@@ -35,7 +35,7 @@
 		"replace-in-files-cli": "^1.0.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^16.1.1",
-		"@wordpress/eslint-plugin": "^5.1.0"
+		"@wordpress/eslint-plugin": "^5.1.0",
+		"@wordpress/scripts": "^36.1.0"
 	}
 }
