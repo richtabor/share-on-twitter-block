@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Plugin Coding Standards">
+	<description>WordPress Coding Standards for Share on Twitter Block plugin</description>
+
+	<!-- Check all PHP files in directory tree by default. -->
+	<arg name="extensions" value="php"/>
+	<file>.</file>
+
+	<!-- Show sniff codes in all reports -->
+	<arg value="ps"/>
+
+	<arg name="colors"/>
+
+	<!-- Use WordPress "Core" Coding Standards. -->
+	<rule ref="WordPress-Core">
+		<!-- Allow long lines in plugin header -->
+		<exclude name="Generic.Files.LineLength"/>
+		<!-- Don't require strict file/class/function doc blocks -->
+		<exclude name="Squiz.Commenting.FileComment"/>
+		<exclude name="Squiz.Commenting.FunctionComment"/>
+		<!-- Allow plugin-specific function naming conventions -->
+		<exclude name="WordPress.NamingConventions.ValidFunctionName"/>
+	</rule>
+
+	<!-- Exclude the build and vendor directories. -->
+	<exclude-pattern>*/build/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*.asset.php</exclude-pattern>
+</ruleset>

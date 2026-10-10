@@ -12,7 +12,7 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       share-on-twitter-block
  *
- * @package           tabor/share-on-twitter-block
+ * @package tabor/share-on-twitter-block
  */
 
 /**
