@@ -32,4 +32,4 @@ dist/
 vendor/
 .DS_Store
 package-lock.json
-*.zip
+*.ziplegacy-test/
