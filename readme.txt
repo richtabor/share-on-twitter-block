@@ -1,7 +1,7 @@
 === Share on Twitter Block ===
 Contributors:      richtabor, mamaduka
 Tags:              social, block, click to tweet, tweet, twitter
-Tested up to:      6.7
+Tested up to:      7.0
 Stable tag:        0.2.6
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -37,7 +37,7 @@ As a WordPress entrepreneur, designer and developer all wrapped up in one, [@ric
 * Fix Plugin URI to point to valid WordPress.org plugin page
 * Update block to use apiVersion 3 for iframe editor compatibility
 * Add source code repository link to readme (required for minified JS)
-* Update tested up to WordPress 6.7
+* Update tested up to WordPress 7.0
 
 = 0.2.5 =
 * Update tested up to value to 6.0
